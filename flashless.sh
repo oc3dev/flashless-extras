@@ -1,7 +1,7 @@
 #!bin/bash
-#Title: Flashless Restricted Extras Installer for Ubuntu
+#Title: GoAwayFlash
 #Description: Installs patent encumbered audio and video codecs
-#Author: Quidsup
+#Author: Oc3dev, originally made by quidsup
 #Date: 24 Apr 2016
 #Usage: bash flashless-extras.sh
 
@@ -10,7 +10,7 @@ if [ "$(command -v apt-get)" ]; then        #Is this an Ubuntu / Debian based di
     echo "Installing Restricted Extras for KDE based system"
     sudo apt-get install lame unrar gstreamer1.0-fluendo-mp3 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-fluendo-mp3 libdvdread4 libk3b6-extracodecs  oxideqt-codecs-extra libavcodec-extra libavcodec-ffmpeg-extra56 libk3b6-extracodecs
   else
-    echo "Installing Restricted Extras"
+    echo "Installing flashless extras now... standby."
     sudo apt-get install lame unrar gstreamer1.0-fluendo-mp3 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-fluendo-mp3 libdvdread4 libk3b6-extracodecs  oxideqt-codecs-extra libavcodec-extra libavcodec-ffmpeg-extra56
   fi
 else                                        #Throw error for non Deb systems
